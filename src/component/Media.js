@@ -2,7 +2,10 @@ import React from 'react';
 
 function Media() {
     return(
-        <h1>Media</h1>
+        <div className="section">
+        <h1><span>My Media</span></h1>
+
+    </div>
     );
 }
 
