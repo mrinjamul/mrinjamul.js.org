@@ -1,4 +1,5 @@
 import React from 'react';
+import Blog from './component/Blog';
 import Reader from './component/Reader';
 
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Blog />
         <Reader />
       </header>
     </div>
