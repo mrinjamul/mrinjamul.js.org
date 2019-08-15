@@ -1,25 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Message from './Message';
+import messageData from './messageData';
 
-class Reader extends Component {
-    constructor() {
-        super()
-        this.state = {
-            "name": "Injamul",
-            "email": "mrinjamul@gmail.com",
-            "message": "Hi"
-        }
-    }
-
-    
-    render() {
-        return(
-            <div>
-                <Message data={this.state} />
-
-            </div>
-        );
-    }
+function Reader(props) {
+    const messageCompo = messageData.map(m => <Message key={m.id} name={m.name} email={m.email} message={m.message} />);
+    return(
+        <div>
+            {messageCompo}
+        </div>
+    );
 }
 
 export default Reader;
