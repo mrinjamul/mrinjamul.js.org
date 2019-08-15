@@ -3,6 +3,7 @@ import Header from './Header';
 import AboutMe from './AboutMe';
 import Schedule from './Schedule';
 import MySkill from './MySkill';
+import MyPage from './MyPage';
 import Media from './Media';
 import Form from './Form';
 import Contact from './Contact';
@@ -24,6 +25,7 @@ class Blog extends Component {
                 <AboutMe />
                 <Schedule />
                 <MySkill />
+                <MyPage />
                 <Media />
                 <Form />
                 <Contact />
