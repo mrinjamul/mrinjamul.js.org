@@ -24,6 +24,23 @@ p {
     padding: 0;
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+    color: blue;
+}
+
 .img-circle {
     border: 3px solid white;
     border-radius: 50%;
