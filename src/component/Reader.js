@@ -1,20 +1,22 @@
 import React, {Component} from 'react';
 import Message from './Message';
 
-class Reader extends Component() {
+class Reader extends Component {
     constructor() {
         super()
         this.state = {
-            "name": "",
-            "email": "",
-            "message": ""
+            "name": "Injamul",
+            "email": "mrinjamul@gmail.com",
+            "message": "Hi"
         }
     }
+
     
     render() {
         return(
             <div>
-                <Message />
+                <Message data={this.state} />
+
             </div>
         );
     }
