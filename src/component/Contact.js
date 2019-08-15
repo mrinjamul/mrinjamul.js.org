@@ -1,18 +1,23 @@
 import React from 'react';
 
+import icon_sololearn from './Uploads/icons/sololearn.png';
+import icon_facebook from './Uploads/icons/facebook.png';
+import icon_twitter from './Uploads/icons/twitter.png';
+
+
 function Contact() {
     return(
         <div className="section" id="contacts">
         <h1><span>Follow Me</span></h1>
         <div>
             <a href="https://www.sololearn.com/" >
-                <img alt="SoloLearn" src="https://www.sololearn.com/Uploads/icons/sololearn.png" />
+                <img alt="SoloLearn" src={icon_sololearn} />
             </a>
             <a href="https://www.sololearn.com/">
-                <img alt="Facebook" src="https://www.sololearn.com/Uploads/icons/facebook.png"/>
+                <img alt="Facebook" src={icon_facebook} />
             </a>
             <a href="https://www.sololearn.com/">
-                <img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" />
+                <img alt="Twitter" src={icon_twitter} />
             </a>
         </div>
     </div>
