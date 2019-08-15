@@ -20,20 +20,21 @@ class Blog extends Component {
 
     render() {
         return(
-            <div>
-                <Header />
-                <AboutMe />
-                <Schedule />
-                <MySkill />
-                <MyPage />
-                <Media />
-                <Form />
-                <Contact />
-                <div class="copyright">
-                &copy; 2019 My Injamul Mohammad Mollah. All rights reserved.
+            <tbody>
+                <div>
+                    <Header />
+                    <AboutMe />
+                    <Schedule />
+                    <MySkill />
+                    <MyPage />
+                    <Media />
+                    <Form />
+                    <Contact />
+                    <div className="copyright">
+                    &copy; 2019 My Injamul Mohammad Mollah. All rights reserved.
+                    </div>
                 </div>
-
-            </div>
+            </tbody>
         );
     }
 }
