@@ -1,6 +1,6 @@
 import React from 'react';
-// import Blog from './component/Blog';
-import Reader from './component/Reader';
+import Blog from './component/Blog';
+
 
 import './App.css';
 
