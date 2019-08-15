@@ -30,7 +30,7 @@ class Blog extends Component {
                 <Form />
                 <Contact />
                 <div class="copyright">
-                &copy; 2017 My Injamul Mohammad Mollah. All rights reserved.
+                &copy; 2019 My Injamul Mohammad Mollah. All rights reserved.
                 </div>
 
             </div>
