@@ -5,6 +5,7 @@ import icon_sololearn from './Uploads/icons/sololearn.png';
 import icon_linkedin from './Uploads/icons/linkedin.png';
 import icon_facebook from './Uploads/icons/facebook.png';
 import icon_twitter from './Uploads/icons/twitter.png';
+import icon_hackerrank from './Uploads/icons/hackerrank.png';
 
 
 function Contact() {
@@ -26,6 +27,9 @@ function Contact() {
             </a>
             <a href="https://twitter.com/mrinjamul">
                 <img alt="Twitter" src={icon_twitter} />
+            </a>
+            <a href="https://www.hackerrank.com/mrinjamul">
+                <img alt="Hackerrank" src={icon_hackerrank} />
             </a>
         </div>
     </div>
