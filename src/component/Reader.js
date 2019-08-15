@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Message from './Message';
 
+import './Reader.css';
+
 class Reader extends Component {
     constructor() {
         super()
@@ -8,6 +10,7 @@ class Reader extends Component {
             name: "",
             email: "",
             message: "",
+            id: "",
             visitors: []
         }
     }
@@ -27,7 +30,7 @@ class Reader extends Component {
 
     render() {
         var visitors = this.state.visitors;
-		var myvisitors=visitors.map((m,index) => (<Message key={m.id} name={m.name} email={m.email} message={m.message} />));
+		var myvisitors=visitors.map((m,index) => (<Message key={m.id} name={m.name} email={m.email} message={m.message} index={m.id} />));
 
         return(
             <div>
