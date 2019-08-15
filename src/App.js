@@ -1,5 +1,6 @@
 import React from 'react';
-import Blog from './component/Blog'
+// import Blog from './component/Blog';
+import Reader from './component/Reader';
 
 import './App.css';
 
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <Blog/>
+        <Reader/>
+        {/* <Blog /> */}
       </header>
     </div>
   );
