@@ -10,13 +10,13 @@ function Contact() {
         <div className="section" id="contacts">
         <h1><span>Follow Me</span></h1>
         <div>
-            <a href="https://www.sololearn.com/" >
+            <a href="https://www.sololearn.com/Profile/6368073/" >
                 <img alt="SoloLearn" src={icon_sololearn} />
             </a>
-            <a href="https://www.sololearn.com/">
+            <a href="https://www.facebook.com/injamulmohammadmollah4652">
                 <img alt="Facebook" src={icon_facebook} />
             </a>
-            <a href="https://www.sololearn.com/">
+            <a href="https://twitter.com/mrinjamul">
                 <img alt="Twitter" src={icon_twitter} />
             </a>
         </div>
