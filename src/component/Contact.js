@@ -12,7 +12,7 @@ function Contact() {
     return(
         <div className="section" id="contacts">
         <h1><span>Follow Me</span></h1>
-        <div>
+        <div id="non-selectable">
         <a href="https://github.com/mrinjamul/" >
                 <img alt="Github" src={icon_github} />
             </a>
