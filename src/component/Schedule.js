@@ -5,6 +5,7 @@ function Schedule() {
         <div className="section">
         <h1><span>My Coding Schedule</span></h1>
         <table>
+        <thead>
             <tr>
                 <th>Day</th>
                 <th>Mon</th>
@@ -13,6 +14,8 @@ function Schedule() {
                 <th>Thu</th>
                 <th>Fri</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>8-8:30</td>
                 <td className="selected">Learn</td>
@@ -53,6 +56,7 @@ function Schedule() {
                 <td></td>
                 <td className="selected">Discuss</td>
             </tr>
+            </tbody>
         </table>
     </div>
 
