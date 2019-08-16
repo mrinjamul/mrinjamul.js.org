@@ -48,13 +48,13 @@ class Form extends Component {
                 <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
                 <circle cx="30" cy="30" r="5" fill="#000000"/>
                 <circle cx="70" cy="30" r="5" fill="#000000"/>
-                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
+                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" strokeWidth="5" fill="none" />
             </svg>
                  
             <form onSubmit={this.handleSubmit} >
                 <input name="name" value={this.state.name} placeholder="Name" type="text" required onChange={this.handleChange} /><br/>
                 <input name="email" value={this.state.email} placeholder="Email" type="email" required onChange={this.handleChange} /><br/>
-                <textarea name="message" value={this.state.message} placeholder="Message" required onChange={this.handleChange} ></textarea>
+                <textarea name="message" value={this.state.message} placeholder="Write a message." required onChange={this.handleChange} ></textarea>
                 <input type="submit" value="SEND" className="submit" />
             </form>
         </div>
