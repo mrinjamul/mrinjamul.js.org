@@ -26,6 +26,9 @@ function MySkill() {
             <li>Python <br />
                 <progress min="0" max="100" value="5"></progress>
             </li>
+            <li>Git VCS <br />
+                <progress min="0" max="100" value="60"></progress>
+            </li>
         </ul>
     </div>
 
