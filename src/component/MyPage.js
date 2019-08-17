@@ -24,6 +24,9 @@ function MyPage() {
             <li>
                 <a href="https://mrinjamul.github.io/myapp" target="_blank" rel="noopener noreferrer" >My App [In Development]</a>
             </li>
+            <li hidden>
+                <a href="https://mrinjamul.github.io/" target="_blank" rel="noopener noreferrer" >New</a>
+            </li>
         </ul>
     </div>
     );
