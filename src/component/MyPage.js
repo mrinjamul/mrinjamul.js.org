@@ -9,20 +9,23 @@ function MyPage() {
                 <a href="https://mrinjamul.github.io" >Home</a>
             </li>
             <li>
-                <a href="https://mrinjamul.github.io/myschedule" >My College Schedule</a>
+                <a href="https://mrinjamul.github.io/myschedule" target="_blank" rel="noopener noreferrer" >My College Schedule</a>
             </li>
             <li>
-                <a href="https://mrinjamul.github.io/calculator-html" >Calculator by HTML</a>
+                <a href="https://mrinjamul.github.io/calculator-html" target="_blank" rel="noopener noreferrer" >Calculator by HTML</a>
             </li>
             <li>
-                <a href="https://mrinjamul.github.io/snake-2d" >Snake 2D</a>
+                <a href="https://mrinjamul.github.io/snake-2d" target="_blank" rel="noopener noreferrer" >Snake 2D</a>
             </li>
             <li>
-                <a href="https://mrinjamul.github.io/Chess-2D" >Chess 2D</a>
+                <a href="https://mrinjamul.github.io/Chess-2D" target="_blank" rel="noopener noreferrer" >Chess 2D</a>
             </li>
 
             <li>
-                <a href="https://mrinjamul.github.io/myapp" >My App [In Development]</a>
+                <a href="https://mrinjamul.github.io/myapp" target="_blank" rel="noopener noreferrer" >My App [In Development]</a>
+            </li>
+            <li hidden>
+                <a href="https://mrinjamul.github.io/" target="_blank" rel="noopener noreferrer" >New</a>
             </li>
         </ul>
     </div>
