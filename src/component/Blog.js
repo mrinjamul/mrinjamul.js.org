@@ -7,6 +7,7 @@ import MyPage from './MyPage';
 import Media from './Media';
 import Form from './Form';
 import Contact from './Contact';
+import Motto from './Motto'
 
 import './Blog.css';
 
@@ -28,7 +29,9 @@ class Blog extends Component {
                 <MyPage />
                 <Media />
                 <Form />
+                <Motto />
                 <Contact />
+
                 <div className="copyright">
                 &copy; 2019 My Injamul Mohammad Mollah. All rights reserved.
                 </div>
