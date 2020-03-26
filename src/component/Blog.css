@@ -106,7 +106,7 @@ progress {
     color: #3fb6b2;
     background: #efefef;
 }
-progress::-webkit-progress-bar {
+/* progress::-webkit-progress-bar {
     background: #efefef;
 }
 progress::-webkit-progress-value {
@@ -115,7 +115,7 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     color: #3fb6b2;
     background: #efefef;
-}
+} */
 iframe, audio {
     display: block;
     margin: 0 auto;
