@@ -18,9 +18,12 @@ function MyPage() {
                 <a href="https://mrinjamul.github.io/myapp" target="_blank" rel="noopener noreferrer" >React Counter App</a>
             </li>
             <li>
+                <a href="https://github.com/mrinjamul/react-currency-calculator" target="_blank" rel="noopener noreferrer" >React Currency Converter</a>
+            </li>
+            <li>
                 <a href="https://mrinjamul.github.io/react-movie-cards" target="_blank" rel="noopener noreferrer" >React Movie Cards</a>
             </li>
-            
+
             {/* <!-- This Projects  are old HTML. --> */}
             <li>
                 <a href="https://mrinjamul.github.io/calculator-html" target="_blank" rel="noopener noreferrer" >Calculator by HTML</a>
