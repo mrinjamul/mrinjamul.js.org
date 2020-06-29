@@ -105,8 +105,17 @@ ul li {
 progress {
   width: 70%;
   height: 20px;
-  color: #3fb6b2;
+  color: $font-color;
   background: $main-bg-color;
+  &::-webkit-progress-bar {
+    background-color: $main-bg-color;
+  }
+  &::-webkit-progress-value {
+    background-color: $font-color;
+  }
+  &::-moz-progress-bar {
+    background-color: $font-color;
+  }
 }
 iframe,
 audio {
