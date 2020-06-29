@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../logo.svg";
 
-import "../styles/Media.css";
+import "../styles/Media.scss";
 
 function Media() {
   return (
