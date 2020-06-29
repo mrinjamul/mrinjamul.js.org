@@ -1,15 +1,17 @@
-import React from 'react';
-import logo from '../logo.svg';
+import React from "react";
+import logo from "../logo.svg";
 
-import './Media.css';
+import "../styles/Media.css";
 
 function Media() {
-    return(
-        <div className="section">
-        <h1><span>My Media</span></h1>
-        <img src={logo} className="Media-logo" alt="logo" draggable="false" />
+  return (
+    <div className="section">
+      <h1>
+        <span>My Media</span>
+      </h1>
+      <img src={logo} className="Media-logo" alt="logo" draggable="false" />
     </div>
-    );
+  );
 }
 
 export default Media;
