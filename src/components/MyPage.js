@@ -1,46 +1,75 @@
-import React from 'react';
+import React, { Component } from "react";
 
-function MyPage() {
-    return(
-        <div className="section">
-        <h1><span>My Pages</span></h1>
+class MyPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      pages: [
+        {
+          id: 1,
+          title: "My College Schedule",
+          link: "https://mrinjamul.github.io/myschedule",
+        },
+        {
+          id: 2,
+          title: "React Clock",
+          link: "https://mrinjamul.github.io/react-clock",
+        },
+        {
+          id: 3,
+          title: "React Counter App",
+          link: "https://mrinjamul.github.io/myapp",
+        },
+        {
+          id: 4,
+          title: "React Currency Converter",
+          link: "https://mrinjamul.github.io/react-currency-calculator",
+        },
+        {
+          id: 5,
+          title: "React Movie Cards",
+          link: "https://mrinjamul.github.io/react-movie-cards",
+        },
+        {
+          id: 6,
+          title: "Calculator by HTML",
+          link: "https://mrinjamul.github.io/calculator-html",
+        },
+        {
+          id: 7,
+          title: "Snake 2D",
+          link: "https://mrinjamul.github.io/snake-2d",
+        },
+        {
+          id: 8,
+          title: "Chess 2D",
+          link: "https://mrinjamul.github.io/Chess-2D",
+        },
+      ],
+    };
+  }
+  render() {
+    let MyPages = this.state.pages.map((page) => (
+      <li key={page.id}>
+        <a href={page.link} target="_blank" rel="noopener noreferrer">
+          {page.title}
+        </a>
+      </li>
+    ));
+    return (
+      <div className="section">
+        <h1>
+          <span>My Pages</span>
+        </h1>
         <ul>
-            <li>
-                <a href="https://mrinjamul.github.io" >Home</a>
-            </li>
-            <li>
-                <a href="https://mrinjamul.github.io/myschedule" target="_blank" rel="noopener noreferrer" >My College Schedule</a>
-            </li>
-            <li>
-                <a href="https://mrinjamul.github.io/react-clock" target="_blank" rel="noopener noreferrer" >React Clock</a>
-            </li>
-            <li>
-                <a href="https://mrinjamul.github.io/myapp" target="_blank" rel="noopener noreferrer" >React Counter App</a>
-            </li>
-            <li>
-                <a href="https://mrinjamul.github.io/react-currency-calculator" target="_blank" rel="noopener noreferrer" >React Currency Converter</a>
-            </li>
-            <li>
-                <a href="https://mrinjamul.github.io/react-movie-cards" target="_blank" rel="noopener noreferrer" >React Movie Cards</a>
-            </li>
-
-            {/* <!-- This Projects  are old HTML. --> */}
-            <li>
-                <a href="https://mrinjamul.github.io/calculator-html" target="_blank" rel="noopener noreferrer" >Calculator by HTML</a>
-            </li>
-            <li>
-                <a href="https://mrinjamul.github.io/snake-2d" target="_blank" rel="noopener noreferrer" >Snake 2D</a>
-            </li>
-            <li>
-                <a href="https://mrinjamul.github.io/Chess-2D" target="_blank" rel="noopener noreferrer" >Chess 2D</a>
-            </li>
-
-            <li hidden>
-                <a href="https://mrinjamul.github.io/" target="_blank" rel="noopener noreferrer" >New</a>
-            </li>
+          <li>
+            <a href="https://mrinjamul.github.io">Home</a>
+          </li>
+          {MyPages}
         </ul>
-    </div>
+      </div>
     );
+  }
 }
 
 export default MyPage;
