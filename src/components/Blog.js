@@ -9,7 +9,7 @@ import Form from "./Form";
 import Contact from "./Contact";
 import Motto from "./Motto";
 
-import "../styles/Blog.css";
+import "../styles/Blog.scss";
 
 class Blog extends Component {
   constructor() {
