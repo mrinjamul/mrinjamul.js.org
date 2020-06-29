@@ -1,41 +1,39 @@
-import React from 'react';
+import React, { Component } from "react";
 
-function MySkill() {
-    return(
-        <div className="section">
-        <h1><span>My Skills</span></h1>
+class MySkill extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      skills: [
+        { id: 1, title: "C", value: 80 },
+        { id: 2, title: "C++", value: 80 },
+        { id: 3, title: "Python", value: 60 },
+        { id: 4, title: "HTML", value: 95 },
+        { id: 5, title: "CSS / SASS", value: 90 },
+        { id: 6, title: "Javascript", value: 80 },
+        { id: 7, title: "ReactJs", value: 70 },
+        { id: 8, title: "Shell scripting", value: 75 },
+        { id: 9, title: "Git VCS", value: 95 },
+      ],
+    };
+  }
+  render() {
+    return (
+      <div className="section">
+        <h1>
+          <span>My Skills</span>
+        </h1>
         <ul>
-            <li>C <br />
-                <progress min="0" max="100" value="60"></progress>
+          {this.state.skills.map((skill) => (
+            <li key={skill.id}>
+              {skill.title} <br />
+              <progress min="0" max="100" value={skill.value}></progress>
             </li>
-            <li>C Plus Plus<br />
-                <progress min="0" max="100" value="60"></progress>
-            </li>
-            <li>Python <br />
-                <progress min="0" max="100" value="30"></progress>
-            </li>
-            <li>HTML <br />
-                <progress min="0" max="100" value="70"></progress>
-            </li>
-            <li>CSS <br />
-                <progress min="0" max="100" value="50"></progress>
-            </li>
-            <li>JavaScript <br />
-                <progress min="0" max="100" value="50"></progress>
-            </li>
-            <li>Reactjs <br />
-                <progress min="0" max="100" value="40"></progress>
-            </li>
-            <li>Shell scripting <br />
-                <progress min="0" max="100" value="60"></progress>
-            </li>
-            <li>Git VCS <br />
-                <progress min="0" max="100" value="80"></progress>
-            </li>
+          ))}
         </ul>
-    </div>
-
+      </div>
     );
+  }
 }
 
 export default MySkill;
