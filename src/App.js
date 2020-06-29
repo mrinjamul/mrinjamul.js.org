@@ -1,8 +1,7 @@
-import React from 'react';
-import Blog from './component/Blog';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import Blog from "./components/Blog";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
