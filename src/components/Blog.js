@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import AboutMe from "./AboutMe";
-import Schedule from "./Schedule";
 import MySkill from "./MySkill";
 import MyPage from "./MyPage";
 import Media from "./Media";
@@ -22,12 +21,11 @@ class Blog extends Component {
       <div className="Blog">
         <Header />
         <AboutMe />
-        <Schedule />
         <MySkill />
         <MyPage />
         <Media />
-        <Form />
         <Motto />
+        <Form />
         <Contact />
 
         <div className="copyright">
