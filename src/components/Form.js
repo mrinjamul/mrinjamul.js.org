@@ -25,7 +25,6 @@ class Form extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state);
     firebase
       .firestore()
       .collection("github-messages")
