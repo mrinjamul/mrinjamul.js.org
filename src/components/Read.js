@@ -16,7 +16,6 @@ class Read extends Component {
   }
 
   componentDidMount() {
-    console.log(`componentDidMount`);
     firebase
       .firestore()
       .collection("github-messages")
