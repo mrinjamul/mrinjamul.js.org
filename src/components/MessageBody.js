@@ -13,7 +13,7 @@ function MessageBody(props) {
 
   let UserMessage = messages.map((message) => (
     <User
-      key={message.id}
+      key={messages.indexOf(message)}
       id={message.id}
       name={message.name}
       email={message.email}
