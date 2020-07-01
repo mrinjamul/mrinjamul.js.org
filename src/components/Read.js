@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import "../styles/Read.scss";
 
+import firebase from "../firebase";
+
 import Navbar from "./NavBar";
 import MessageBody from "./MessageBody";
 
@@ -9,81 +11,24 @@ class Read extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      messages: [
-        {
-          id: 1,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hello",
-        },
-        {
-          id: 2,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hi",
-        },
-        {
-          id: 3,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "How are you?",
-        },
-        {
-          id: 4,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "You are Awesome",
-        },
-        {
-          id: 5,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hello",
-        },
-        {
-          id: 6,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hello",
-        },
-        {
-          id: 7,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hello",
-        },
-        {
-          id: 8,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hello",
-        },
-        {
-          id: 9,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hello",
-        },
-        {
-          id: 10,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hello",
-        },
-        {
-          id: 11,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hello",
-        },
-        {
-          id: 12,
-          name: "Anonymous",
-          email: "example@gmail.com",
-          message: "Hello",
-        },
-      ],
+      messages: [],
     };
+  }
+
+  componentDidMount() {
+    console.log(`componentDidMount`);
+    firebase
+      .firestore()
+      .collection("github-messages")
+      .get()
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => doc.data());
+        data.id = querySnapshot.docs.map((doc) => doc.id);
+        // console.log(data); // array of cities objects
+        this.setState({
+          messages: data,
+        });
+      });
   }
 
   render() {
