@@ -1,0 +1,62 @@
+.main {
+  padding: initial;
+  display: block;
+}
+
+.nav-bar {
+  margin-bottom: 5px;
+  padding: 2rem;
+  border-bottom: 1px solid #80808048;
+  height: 3rem;
+  text-align: center;
+  ul,
+  li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+}
+
+.container {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: darkgray;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: gray;
+  }
+  display: grid;
+  height: 520px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  .users-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    overflow-y: scroll;
+    .user {
+      text-align: center;
+      height: 2rem;
+      border-top: 1px solid #80808048;
+      padding: 0.4rem;
+    }
+  }
+  .message {
+    padding: 0.5rem;
+    overflow-y: scroll;
+  }
+}
