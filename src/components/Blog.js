@@ -29,7 +29,7 @@ class Blog extends Component {
         <Contact />
 
         <div className="copyright">
-          &copy; 2019 My Injamul Mohammad Mollah. All rights reserved.
+          &copy; 2019-20 My Injamul Mohammad Mollah. All rights reserved.
         </div>
       </div>
     );
