@@ -5,11 +5,22 @@ layout: default
 {% include header.html %}
 
 <div class="portfolio">
+  <h1>Projects:</h1>
+  <ul>
+    {% for project in site.data.projects %}
+    <li>
+      <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="portfolio">
   <h1>Websites:</h1>
   <ul>
     {% for websites in site.data.websites %}
     <li>
-      <a href="{{ websites.url }}">{{ websites.url }}</a>
+      <a href="{{ websites.url }}" target="_blank">{{ websites.url }}</a>
     </li>
     {% endfor %}
   </ul>
