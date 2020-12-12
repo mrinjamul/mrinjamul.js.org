@@ -1,0 +1,7 @@
+- name: gpassmanager
+  category: tools
+  url: https://mrinjamul.github.io/gpassmanager
+
+- name: vim-in
+  category: ide
+  url: https://github.com/mrinjamul/vim-in
